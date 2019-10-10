@@ -1,0 +1,734 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 07/19/16 by Rahul
+' *****************************************************************************
+Dim swApp As Object
+
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long, longwarnings As Long
+
+Sub main()
+
+Set swApp = _
+Application.SldWorks
+
+swApp.ActivateDoc2 "Final assembly", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Dim myModelView As Object
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusy
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.047138640234610563, 0.064358536704389735, 0.10482678964916659, False, 0, Nothing, 0)
+Part.OpenCompFile
+Set Part = swApp.OpenDoc6("E:\Robocon\Omni Wheel\Part1.SLDPRT", 1, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Part1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Cut-Extrude1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Cut-Extrude1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Sketch2", "SKETCH", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Final assembly", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Part.ViewRotateplusx
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateminusx
+Part.ShowNamedView2 "*Front", 1
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.067460496225025535, 0.094841952585725017, 0.10682678964934667, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.067460496225025535, 0.094841952585725017, 0.10682678964934667, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.EditUndo2 1
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateminusy
+Part.ShowNamedView2 "*Front", 1
+Part.ClearSelection2 True
+Dim skSegment As Object
+Set skSegment = Part.SketchManager.CreateCircle(0.068194, 0.049282, 0.000000, 0.083674, 0.030521, 0.000000)
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Part.ClearSelection2 True
+Set skSegment = Part.SketchManager.CreateCircle(0.068194, 0.073032, 0.000000, 0.070118, 0.070123, 0.000000)
+Part.ClearSelection2 True
+boolstatus = Part.SketchManager.EditCircularSketchStepAndRepeat(0.02375, 4.7123889803847323, 6, 1.0471975511966001, True, "", False, False, True, "Arc2_")
+Part.ClearSelection2 True
+Part.ViewRotateplusy
+boolstatus = Part.Extension.SelectByID2("Arc1", "SKETCHSEGMENT", 0.059436196023540333, 0.071983948678275664, 0.10482678964939396, False, 0, Nothing, 0)
+Part.EditDelete
+Part.ClearSelection2 True
+Dim myFeature As Object
+Set myFeature = Part.FeatureManager.FeatureCut3(True, False, False, 1, 0, 0.01, 0.01, False, False, False, False, 0.017453292519943334, 0.017453292519943334, False, False, False, False, False, True, True, True, True, False, 0, 0, False)
+Part.SelectionManager.EnableContourSelection = False
+Part.ClearSelection2 True
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusx
+Part.ViewRotateplusy
+Part.ViewRotateplusx
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateminusx
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.11118485249858168, 0.075819235139388041, 0.10447784890540435, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.11118485249858168, 0.075819235139388041, 0.10447784890540435, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.EditUndo2 1
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.10390206594786378, 0.08474459516939703, 0.073250131745396629, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.088875416166786181, 0.094497049639500119, 0.09624025188009, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.088875416166786181, 0.094497049639500119, 0.09624025188009, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.EditUndo2 1
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.073301244635125329, 0.097101111734460233, 0.070199695031988085, False, 0, Nothing, 0)
+Part.ViewRotateminusy
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.078168094765260321, 0.068617434659302035, 0.073826789649388047, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.ViewRotateminusy
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.060494299801916895, 0.076202717561045574, 0.089235562929786738, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateplusy
+Part.ViewRotateplusx
+Part.ViewRotateplusy
+Part.ViewRotateplusx
+Part.ViewRotateplusy
+Part.ViewRotateminusx
+Part.ViewRotateplusx
+Part.ViewRotateminusy
+Part.ViewRotateplusx
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusy
+Part.ViewRotateplusx
+Part.ViewRotateplusy
+Part.ViewRotateplusx
+Part.ViewRotateminusy
+Part.ViewRotateminusx
+Part.ViewRotateminusy
+Dim myConfiguration As Object
+Set myConfiguration = Part.AddComponentConfiguration("PreviewCfg", "", "PreviewCfg", 33)
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.ShowConfiguration2("IS 2269 - M4 x 25-N")
+boolstatus = Part.Extension.SelectByID2("Concentric", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.AddComponent("C:\SOLIDWORKS Data\browser\IS\bolts and screws\socket head screws\socket head cap screw_is.sldprt", 0, 0, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Concentric", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.AddComponent("C:\SOLIDWORKS Data\browser\IS\bolts and screws\socket head screws\socket head cap screw_is.sldprt", 0, 0, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Concentric", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.AddComponent("C:\SOLIDWORKS Data\browser\IS\bolts and screws\socket head screws\socket head cap screw_is.sldprt", 0, 0, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Concentric", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.AddComponent("C:\SOLIDWORKS Data\browser\IS\bolts and screws\socket head screws\socket head cap screw_is.sldprt", 0, 0, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Concentric", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.AddComponent("C:\SOLIDWORKS Data\browser\IS\bolts and screws\socket head screws\socket head cap screw_is.sldprt", 0, 0, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Concentric", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.AddComponent("C:\SOLIDWORKS Data\browser\IS\bolts and screws\socket head screws\socket head cap screw_is.sldprt", 0, 0, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.14650802163833987, 0.029158843755581643, 0.075813291013105299, False, 0, Nothing, 0)
+Part.EditDelete
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.07081406227774778, 0.076218165482998756, 0.10817202974629936, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.07081406227774778, 0.076218165482998756, 0.10817202974629936, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.EditUndo2 1
+boolstatus = Part.Extension.SelectByID2("", "VERTEX", 0.090262104578765323, 0.062023219237068238, 0.10882678964933166, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "VERTEX", 0.090262104578765323, 0.062023219237068238, 0.10882678964933166, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "VERTEX", 0.090262104578765323, 0.062023219237068238, 0.10882678964933166, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.EditUndo2 1
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusx
+Part.ViewRotateplusy
+Part.ViewRotateplusx
+Part.ViewRotateminusy
+Part.ViewZoomtofit2
+Part.ShowNamedView2 "*Right", 4
+boolstatus = Part.ShowConfiguration2("PreviewCfg")
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.ShowConfiguration2("IS 2269 - M4 x 30-N")
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.086264266773611098, 0.039557478018871141, 0.10882762346432173, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.063536673663435295, -0.015726996547983395, 0.079658196122977643, True, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.091123336515437359, 0.038228524303321673, 0.098908820891324467, True, 1, Nothing, 0)
+Part.ViewRotateminusy
+Part.ViewRotateminusx
+Part.ViewRotateplusy
+Part.ViewRotateminusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.070778652617406124, -0.016030123484267023, 0.079880459162211537, True, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.087730745649736264, 0.038868047838763076, 0.10492581488335873, True, 1, Nothing, 0)
+Part.ClearSelection2 True
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.056858637319550098, -0.018016382419173027, 0.0815124237406053, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.056858637319550098, -0.018016382419173027, 0.0815124237406053, False, 0, Nothing, 0)
+Part.RotateComponent
+Part.ClearSelection2 True
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewZoomtofit2
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.11293619177041592, 0.030744685405839078, 0.07037893788213978, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+Part.ViewZoomTo2 -0.10435839987553652, 0.04325862451337352, 0.13153383557166384, -0.033326205126497033, -0.032194661195149715, 0.13153383557166437
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.064352869211802499, -0.01551457194432615, 0.09265915069914854, True, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.074246492920110541, 0.027488347333360252, 0.073826789649217517, True, 1, Nothing, 0)
+Dim myMate As Object
+Set myMate = Part.AddMate5(0, 1, False, 0.040781054679222252, 0.001, 0.001, 0.001, 0.001, 0.1941756532302096, 0.52359877559830004, 0.52359877559830004, False, False, 0, longstatus)
+Part.ClearSelection2 True
+Part.EditRebuild3
+
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.067069469691489303, -0.016454107666547202, 0.081561417759530741, True, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.066038483452473429, 0.02426580405418477, 0.076741575616949831, True, 1, Nothing, 0)
+Set myMate = Part.AddMate5(1, 1, False, 0.043105476251028091, 0, 0, 0.001, 0.001, 0, 0.52359877559830004, 0.52359877559830004, False, False, 0, longstatus)
+Part.ClearSelection2 True
+Part.EditRebuild3
+
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateplusx
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusx
+Part.ViewRotateminusy
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.067339563894677212, -0.017253830517020674, 0.091039331354181741, True, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.08635396190186384, 0.038078646622057732, 0.076077417741203135, True, 1, Nothing, 0)
+Set myMate = Part.AddMate5(1, 1, False, 0.059670494360463192, 0, 0, 0.001, 0.001, 0, 0.52359877559830004, 0.52359877559830004, False, False, 0, longstatus)
+Part.ClearSelection2 True
+Part.EditRebuild3
+
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.089649993427428853, 0.037124500670021376, 0.10382678964919023, True, 1, Nothing, 0)
+Part.ClearSelection2 True
+Part.SetPickMode
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.089173105127201779, 0.037606070614177867, 0.10382678964913339, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.089181045151633498, 0.037478206590172647, 0.10382678964913339, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.086889739326011295, 0.0374540811794013, 0.10398104047027346, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.086889739326011295, 0.0374540811794013, 0.10398104047027346, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.087441541885368679, 0.037616880497001404, 0.10367111767243387, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.087978156562598997, 0.037654238233262305, 0.10382678964919023, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.088852532918963334, 0.037969738584951784, 0.10382678964919023, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Unknown", "MANIPULATOR", 0.086002105931811457, 0.037274633156879844, 0.10498189085001286, False, 0, Nothing, 0)
+boolstatus = Part.ShowConfiguration2("PreviewCfg")
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.ShowConfiguration2("IS 2269 - M4 x 35-N")
+Part.ViewRotateminusx
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusx
+Part.ViewRotateminusx
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.06681757908278918, 0.028114420317081112, 0.10890910488956251, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.050110676138190868, 0.038508398287689261, 0.10882678964924253, True, 0, Nothing, 0)
+Part.EditDelete
+' MSGBOX
+' Some of the selected entities cannot be deleted.
+
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.066892660724313657, 0.028387582072525674, 0.10886336076811176, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.088935070492670576, 0.039399700493873979, 0.10622873215578466, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.088961201677365764, 0.0382878358922909, 0.10882678964912884, False, 0, Nothing, 0)
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.080840206324580777, 0.034439914152216033, 0.10482678964928027, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.088191579614544935, 0.03759209747201453, 0.10882678964929937, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Unknown", "MANIPULATOR", 0.081189890463747361, 0.03410847420684604, 0.10482678964933712, False, 0, Nothing, 0)
+boolstatus = Part.ShowConfiguration2("PreviewCfg")
+boolstatus = Part.ShowConfiguration2("IS 2269 - M4 x 35-N")
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.090490927230405305, 0.03841276443685615, 0.10638421984964452, False, 0, Nothing, 0)
+Part.EditDelete
+Part.ViewZoomtofit2
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.070522222003603474, 0.075645503625622723, 0.10649544107604925, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.050751829759917655, 0.062731534965365654, 0.10672389517890224, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.091879301140920688, 0.062117759687566831, 0.10882030427450218, False, 0, Nothing, 0)
+Part.EditDelete
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+boolstatus = Part.ShowConfiguration2("PreviewCfg")
+boolstatus = Part.ShowConfiguration2("IS 2269 - M4 x 30-N")
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.13447202225825095, 0.0074098748955293559, 0.1247209521962418, False, 0, Nothing, 0)
+Part.ActivateSelectedFeature
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.13438123275545877, 0.0092932464055195396, 0.12304011074883192, False, 0, Nothing, 0)
+Part.SetPickMode
+Part.ClearSelection2 True
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.15524881713099603, 0.0075950229422119264, 0.12285623396832079, False, 0, Nothing, 0)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.14589984000656386, 0.0058094627741951399, 0.12341071959986039, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.ShowConfiguration2("PreviewCfg")
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.ShowConfiguration2("IS 2269 - M6 x 35-N")
+boolstatus = Part.Extension.SelectByID2("Concentric", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.AddComponent("C:\SOLIDWORKS Data\browser\IS\bolts and screws\socket head screws\socket head cap screw_is.sldprt", 0, 0, 0)
+Part.ClearSelection2 True
+boolstatus = Part.AddComponent("C:\SOLIDWORKS Data\browser\IS\bolts and screws\socket head screws\socket head cap screw_is.sldprt", 0, 0, 0)
+boolstatus = Part.Extension.SelectByID2("Concentric", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.AddComponent("C:\SOLIDWORKS Data\browser\IS\bolts and screws\socket head screws\socket head cap screw_is.sldprt", 0, 0, 0)
+Part.ClearSelection2 True
+boolstatus = Part.AddComponent("C:\SOLIDWORKS Data\browser\IS\bolts and screws\socket head screws\socket head cap screw_is.sldprt", 0, 0, 0)
+boolstatus = Part.Extension.SelectByID2("Concentric", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.AddComponent("C:\SOLIDWORKS Data\browser\IS\bolts and screws\socket head screws\socket head cap screw_is.sldprt", 0, 0, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Concentric", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.AddComponent("C:\SOLIDWORKS Data\browser\IS\bolts and screws\socket head screws\socket head cap screw_is.sldprt", 0, 0, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Concentric", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.AddComponent("C:\SOLIDWORKS Data\browser\IS\bolts and screws\socket head screws\socket head cap screw_is.sldprt", 0, 0, 0)
+Part.ClearSelection2 True
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.065229436341837754, 0.073491927419667036, 0.066731525365185007, False, 0, Nothing, 0)
+Part.EditDelete
+Part.ViewRotateminusx
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewZoomTo2 -0.075329812608686098, 0.089380988494561275, 0.15704723151431005, -0.011179628239956552, 0.047243122291572265, 0.15704723151431035
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusy
+Part.ViewZoomtofit2
+Part.SetPickMode
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.093021961116850349, 0.03932386791404241, 0.11082774337916135, False, 0, Nothing, 0)
+boolstatus = Part.EditRebuild3()
+Part.ClearSelection2 True
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.092303710221642632, 0.039385238741836304, 0.10841806964907619, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.1653050312733626, 0.0066275262854631478, 0.12645143487117139, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.ShowConfiguration2("PreviewCfg")
+boolstatus = Part.ShowConfiguration2("IS 2269 - M5 x 35-N")
+boolstatus = Part.Extension.SelectByID2("Concentric", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.AddComponent("C:\SOLIDWORKS Data\browser\IS\bolts and screws\socket head screws\socket head cap screw_is.sldprt", 0, 0, 0)
+Part.ClearSelection2 True
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewZoomTo2 -0.069790220887290394, 0.073982175547116197, 0.10741137219787388, -0.0087700298287665124, 0.019324279290902885, 0.10741137219787426
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateminusx
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateminusy
+Part.ViewRotateminusx
+Part.ViewRotateminusy
+Part.ViewRotateplusy
+Part.SetPickMode
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.088341893402690275, 0.064680806245789313, 0.11082678964925208, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.071149513333102377, 0.076250655816160418, 0.11082678964925208, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.051196410173529827, 0.062196383562401536, 0.11082678964925208, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.048708622841211024, 0.041256201551647109, 0.11082678964925208, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.067519492718684404, 0.028721693179889485, 0.11082678964925208, False, 0, Nothing, 0)
+Part.EditDelete
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusx
+Part.ViewZoomtofit2
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.15590267995855811, -0.0096453617720868579, 0.070560549972583431, False, 0, Nothing, 0)
+Part.EditDelete
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateminusx
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Set Part = Nothing
+swApp.CloseDoc "Final assembly"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Part1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ExitApp
+End Sub
